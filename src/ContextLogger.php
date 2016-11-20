@@ -28,7 +28,7 @@ class ContextLogger implements LoggerInterface
      *
      * @return void
      */
-    public function addContext(string $name, $value)
+    public function addContext($name, $value)
     {
         $this->context[$name] = $value;
     }
@@ -38,7 +38,7 @@ class ContextLogger implements LoggerInterface
      *
      * @return void
      */
-    public function removeContext(string $name)
+    public function removeContext($name)
     {
         unset($this->context[$name]);
     }
