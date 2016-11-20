@@ -4,3 +4,5 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [1.0.0] - 2016-11-20
 ### Added
+* `ContextLogger::addContext(string $name, $value)`
+* `ContextLogger::removeContext(string $name)`
