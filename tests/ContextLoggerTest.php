@@ -124,7 +124,7 @@ final class ContextLoggerTest extends \PHPUnit_Framework_TestCase
             ->shouldHaveBeenCalled();
     }
 
-    public function logLevels() : array
+    public function logLevels()
     {
         return [
             ['emergency', 'emergency', []],
