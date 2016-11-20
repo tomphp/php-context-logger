@@ -1,6 +1,6 @@
 {
     "name": "tomphp/context-logger",
-    "description": "A PSR-7 compliant logger decorator which allows context metadata to be built up.  ",
+    "description": "A PSR-3 compliant logger decorator which allows context metadata to be built up.  ",
     "license": "MIT",
     "type": "library",
     "homepage": "https://github.com/tomphp/php-context-logger",
