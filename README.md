@@ -6,7 +6,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/tomphp/context-logger/v/unstable)](https://packagist.org/packages/tomphp/context-logger)
 [![License](https://poser.pugx.org/tomphp/context-logger/license)](https://packagist.org/packages/tomphp/context-logger)
 
-A PSR-7 compliant logger decorator which allows context metadata to be built up.
+A PSR-3 compliant logger decorator which allows context metadata to be built up.
 
 ## Installation
 
