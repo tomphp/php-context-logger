@@ -31,7 +31,7 @@ final class ContextLoggerTest extends \PHPUnit_Framework_TestCase
      *
      * @dataProvider logLevels
      */
-    public function the_context_can_be_set_by_the_constructor(string $level, string $method, array $args)
+    public function the_context_can_be_set_by_the_constructor($level, $method, array $args)
     {
         $context = ['correlation_id' => uniqid(), 'user_id' => uniqid()];
         $logger  = new ContextLogger($this->psrLogger->reveal(), $context);
@@ -49,7 +49,7 @@ final class ContextLoggerTest extends \PHPUnit_Framework_TestCase
      *
      * @dataProvider logLevels
      */
-    public function on_add_context_it_adds_metadata_to_the_message(string $level, string $method, array $args)
+    public function on_add_context_it_adds_metadata_to_the_message($level, $method, array $args)
     {
         $correlationId = uniqid();
         $userId        = uniqid();
@@ -70,7 +70,7 @@ final class ContextLoggerTest extends \PHPUnit_Framework_TestCase
      *
      * @dataProvider logLevels
      */
-    public function added_context_overrides_constructor_context(string $level, string $method, array $args)
+    public function added_context_overrides_constructor_context($level, $method, array $args)
     {
         $context = ['correlation_id' => 'example-id', 'user_id' => 'old-user-id'];
         $logger  = new ContextLogger($this->psrLogger->reveal(), $context);
@@ -90,7 +90,7 @@ final class ContextLoggerTest extends \PHPUnit_Framework_TestCase
      *
      * @dataProvider logLevels
      */
-    public function method_context_overrides_added_context(string $level, string $method, array $args)
+    public function method_context_overrides_added_context($level, $method, array $args)
     {
         $this->logger->addContext('correlation_id', 'example-id');
         $this->logger->addContext('user_id', 'old-user-id');
@@ -109,7 +109,7 @@ final class ContextLoggerTest extends \PHPUnit_Framework_TestCase
      *
      * @dataProvider logLevels
      */
-    public function on_removeContext_it_removes_context_by_key(string $level, string $method, array $args)
+    public function on_removeContext_it_removes_context_by_key($level, $method, array $args)
     {
         $this->logger->addContext('correlation_id', 'example-id');
         $this->logger->addContext('user_id', 'old-user-id');
