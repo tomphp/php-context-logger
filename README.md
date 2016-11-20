@@ -46,7 +46,7 @@ The context can be added to or modified by the
 `addContext(string $name, $value)` method.
 
 The context can also be added to/modified by providing an array to the
-`$context` parameter of any of the PSR-7 `LoggerInterface` methods.
+`$context` parameter of any of the PSR-3 `LoggerInterface` methods.
 
 ### Removing Context
 
