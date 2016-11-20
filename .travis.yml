@@ -18,8 +18,8 @@ install:
   - composer install --prefer-dist
 
 script:
-  - php-cs-fixer fix --dry-run
-  - phpunit
+  - vendor/bin/php-cs-fixer fix --dry-run
+  - vendor/bin/phpunit
 
 matrix:
   fast_finish: true
