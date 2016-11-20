@@ -4,7 +4,7 @@
     "license": "MIT",
     "type": "library",
     "homepage": "https://github.com/tomphp/php-context-logger",
-    "keywords": ["log", "logger", "psr7", "psr-7"],
+    "keywords": ["log", "logger", "psr3", "psr-3"],
     "authors": [
         {
             "name": "Tom Oram",
